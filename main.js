@@ -20,7 +20,7 @@ const cancelBtnB = document.querySelector(".cancelBtnB ");
 
 
 window.addEventListener('load', () => {
-    nameN.value = localStorage.getItem('username');
+    nameN.value = localStorage.getItem('username')|| 'Your name...';
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     numberOfTasks.textContent = todos.length;
 
